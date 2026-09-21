@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Vaccination Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vaccination Slot Booking</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="slots.html">Book Slot</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+
+            <p>
+                Manage your vaccination bookings, status and records.
+            </p>
+
+            <div class="dashboard-cards">
+
+                <div class="card">
+                    <h3>Book Vaccination</h3>
+                    <p>View available vaccination slots and book an appointment.</p>
+                    <a href="slots.html">
+                        <button>Book Slot</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>My Booking</h3>
+                    <p>View your current vaccination booking details.</p>
+                    <a href="booking.html">
+                        <button>View Booking</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Vaccination Status</h3>
+                    <p>Check your vaccination status and appointment information.</p>
+                    <button onclick="showStatus()">Check Status</button>
+                </div>
+
+                <div class="card">
+                    <h3>Vaccination Records</h3>
+                    <p>View your previous vaccination records.</p>
+                    <button onclick="showRecords()">View Records</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Vaccination Slot Booking Platform</p>
+    </footer>
+
+    <script>
+        function showStatus() {
+            alert("Your vaccination status will be displayed here.");
+        }
+
+        function showRecords() {
+            alert("Your vaccination records will be displayed here.");
+        }
+    </script>
+
+</body>
+</html>
